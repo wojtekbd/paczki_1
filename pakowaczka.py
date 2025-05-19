@@ -59,7 +59,7 @@ for element in range(liczba_elementow_do_wyslania):
         break
     puste_kg = 20 - waga_paczki
     kg_wyslane += waga_elementu
-    if waga_paczki+waga_elementu > 20:
+    if waga_paczki + waga_elementu > 20:
         # zamknięcie poprzedniej paczki
         suma_pustych_kg += puste_kg
         if 20 - waga_paczki > max_puste_kg:
@@ -89,4 +89,6 @@ if kg_wyslane == 0:
 print(f"Paczki wysłane : {biezaca_paczka + 1}")
 print(f"kg wysłane : {kg_wyslane} kg")
 print(f"puste kg : {suma_pustych_kg} kg")
-print(f"Paczka z największą liczbą pustych kg : {paczka_z_najwiekszymi_pustymi_kg + 1} ({max_puste_kg} kg)")
+print(
+    f"Paczka z największą liczbą pustych kg : {paczka_z_najwiekszymi_pustymi_kg + 1} ({max_puste_kg} kg)"
+)
